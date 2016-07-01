@@ -24,6 +24,21 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		AE20AB3E1D24F0CE00410B70 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE20AB3D1D24F0CE00410B70 /* MyViewController.m */; };
+		AE20AC111D254F7800410B70 /* MyCarthage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE20AC091D254F7800410B70 /* MyCarthage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE20AC171D254FFF00410B70 /* MyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE20AB3C1D24F0CE00410B70 /* MyViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE20AC181D25500600410B70 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE20AB3D1D24F0CE00410B70 /* MyViewController.m */; };
+		AE20AC191D25500A00410B70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		AE20AC1A1D2550BB00410B70 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		AE20AC1B1D2550BB00410B70 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		AE20AC1C1D2550BB00410B70 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		AE20AC1D1D2550BB00410B70 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		AE20AC1E1D2550BB00410B70 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		AE20AC1F1D2550BB00410B70 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		AE20AC201D2550BB00410B70 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		AE20AC211D2550BB00410B70 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		AE20AC221D2550BB00410B70 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		AE20AC231D2550BB00410B70 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		AE20AC3B1D26095700410B70 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE20AC3A1D26095700410B70 /* libstdc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +119,28 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		AE20AC0E1D254F7800410B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE20AC081D254F7800410B70;
+			remoteInfo = MyCarthageFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE20AC151D254F7800410B70 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE20AC111D254F7800410B70 /* MyCarthage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -130,6 +166,10 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		AE20AB3C1D24F0CE00410B70 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		AE20AB3D1D24F0CE00410B70 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		AE20AC091D254F7800410B70 /* MyCarthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCarthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE20AC0B1D254F7800410B70 /* MyCarthageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCarthageFramework.h; sourceTree = "<group>"; };
+		AE20AC0D1D254F7800410B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE20AC3A1D26095700410B70 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +195,24 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE20AC051D254F7800410B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE20AC3B1D26095700410B70 /* libstdc++.tbd in Frameworks */,
+				AE20AC1A1D2550BB00410B70 /* libRCTActionSheet.a in Frameworks */,
+				AE20AC1B1D2550BB00410B70 /* libRCTGeolocation.a in Frameworks */,
+				AE20AC1C1D2550BB00410B70 /* libRCTImage.a in Frameworks */,
+				AE20AC1D1D2550BB00410B70 /* libRCTLinking.a in Frameworks */,
+				AE20AC1E1D2550BB00410B70 /* libRCTNetwork.a in Frameworks */,
+				AE20AC1F1D2550BB00410B70 /* libRCTSettings.a in Frameworks */,
+				AE20AC201D2550BB00410B70 /* libRCTText.a in Frameworks */,
+				AE20AC211D2550BB00410B70 /* libRCTVibration.a in Frameworks */,
+				AE20AC221D2550BB00410B70 /* libRCTWebSocket.a in Frameworks */,
+				AE20AC231D2550BB00410B70 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +327,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AE20AC3A1D26095700410B70 /* libstdc++.tbd */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -297,6 +356,7 @@
 				13B07FAE1A68108700A75B9A /* ReactNativeSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeSampleTests */,
+				AE20AC0A1D254F7800410B70 /* MyCarthageFramework */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -308,11 +368,32 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeSample.app */,
 				00E356EE1AD99517003FC87E /* ReactNativeSampleTests.xctest */,
+				AE20AC091D254F7800410B70 /* MyCarthage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AE20AC0A1D254F7800410B70 /* MyCarthageFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AE20AC0B1D254F7800410B70 /* MyCarthageFramework.h */,
+				AE20AC0D1D254F7800410B70 /* Info.plist */,
+			);
+			path = MyCarthageFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE20AC061D254F7800410B70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE20AC171D254FFF00410B70 /* MyViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00E356ED1AD99517003FC87E /* ReactNativeSampleTests */ = {
@@ -341,15 +422,35 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				AE20AC151D254F7800410B70 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE20AC0F1D254F7800410B70 /* PBXTargetDependency */,
 			);
 			name = ReactNativeSample;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AE20AC081D254F7800410B70 /* MyCarthageFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE20AC121D254F7800410B70 /* Build configuration list for PBXNativeTarget "MyCarthageFramework" */;
+			buildPhases = (
+				AE20AC041D254F7800410B70 /* Sources */,
+				AE20AC051D254F7800410B70 /* Frameworks */,
+				AE20AC061D254F7800410B70 /* Headers */,
+				AE20AC071D254F7800410B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCarthageFramework;
+			productName = MyCarthageFramework;
+			productReference = AE20AC091D254F7800410B70 /* MyCarthage.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -357,12 +458,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					AE20AC081D254F7800410B70 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -423,6 +527,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeSample */,
 				00E356ED1AD99517003FC87E /* ReactNativeSampleTests */,
+				AE20AC081D254F7800410B70 /* MyCarthageFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -517,6 +622,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE20AC071D254F7800410B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -555,6 +667,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE20AC041D254F7800410B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE20AC191D25500A00410B70 /* AppDelegate.m in Sources */,
+				AE20AC181D25500600410B70 /* MyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -562,6 +683,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* ReactNativeSample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		AE20AC0F1D254F7800410B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE20AC081D254F7800410B70 /* MyCarthageFramework */;
+			targetProxy = AE20AC0E1D254F7800410B70 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -589,6 +715,7 @@
 				INFOPLIST_FILE = ReactNativeSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeSample.app/ReactNativeSample";
 			};
@@ -602,6 +729,7 @@
 				INFOPLIST_FILE = ReactNativeSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeSample.app/ReactNativeSample";
 			};
@@ -618,11 +746,13 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = ReactNativeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeSample;
 			};
 			name = Debug;
@@ -637,11 +767,13 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = ReactNativeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeSample;
 			};
 			name = Release;
@@ -666,6 +798,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -732,6 +865,57 @@
 			};
 			name = Release;
 		};
+		AE20AC131D254F7800410B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MyCarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.MyCarthageFramework;
+				PRODUCT_MODULE_NAME = MyCarthage;
+				PRODUCT_NAME = MyCarthage;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE20AC141D254F7800410B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MyCarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.MyCarthageFramework;
+				PRODUCT_MODULE_NAME = MyCarthage;
+				PRODUCT_NAME = MyCarthage;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -758,6 +942,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE20AC121D254F7800410B70 /* Build configuration list for PBXNativeTarget "MyCarthageFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE20AC131D254F7800410B70 /* Debug */,
+				AE20AC141D254F7800410B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
