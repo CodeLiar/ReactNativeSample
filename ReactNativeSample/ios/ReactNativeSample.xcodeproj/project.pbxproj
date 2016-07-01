@@ -40,7 +40,6 @@
 		AE20AC231D2550BB00410B70 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		AE20AC3B1D26095700410B70 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE20AC3A1D26095700410B70 /* libstdc++.tbd */; };
 		AE20AC8E1D261F8C00410B70 /* ReactFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AE20AC8D1D261F8C00410B70 /* ReactFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE20AC921D261F8C00410B70 /* ReactFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE20AC8B1D261F8C00410B70 /* ReactFramework.framework */; };
 		AE20AC931D261F8C00410B70 /* ReactFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE20AC8B1D261F8C00410B70 /* ReactFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE20AC971D261FAA00410B70 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		AE20AC981D261FAA00410B70 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -57,6 +56,8 @@
 		AE20ACA31D26201700410B70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		AE20ACA41D26201E00410B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		AE20ACA51D26205300410B70 /* MyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE20AB3C1D24F0CE00410B70 /* MyViewController.h */; };
+		AE20ACCA1D263AEB00410B70 /* ReactLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = AE20ACC91D263AEB00410B70 /* ReactLibrary.h */; };
+		AE20ACCC1D263AEB00410B70 /* ReactLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE20ACCB1D263AEB00410B70 /* ReactLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,15 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE20ACC51D263AEB00410B70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +209,9 @@
 		AE20AC8B1D261F8C00410B70 /* ReactFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE20AC8D1D261F8C00410B70 /* ReactFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactFramework.h; sourceTree = "<group>"; };
 		AE20AC8F1D261F8C00410B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE20ACC71D263AEB00410B70 /* libReactLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE20ACC91D263AEB00410B70 /* ReactLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactLibrary.h; sourceTree = "<group>"; };
+		AE20ACCB1D263AEB00410B70 /* ReactLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +230,6 @@
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
-				AE20AC921D261F8C00410B70 /* ReactFramework.framework in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
@@ -261,6 +273,13 @@
 				AE20AC9E1D261FAA00410B70 /* libRCTVibration.a in Frameworks */,
 				AE20AC9F1D261FAA00410B70 /* libRCTWebSocket.a in Frameworks */,
 				AE20ACA01D261FAA00410B70 /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE20ACC41D263AEB00410B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +425,7 @@
 				00E356EF1AD99517003FC87E /* ReactNativeSampleTests */,
 				AE20AC0A1D254F7800410B70 /* MyCarthageFramework */,
 				AE20AC8C1D261F8C00410B70 /* ReactFramework */,
+				AE20ACC81D263AEB00410B70 /* ReactLibrary */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -419,6 +439,7 @@
 				00E356EE1AD99517003FC87E /* ReactNativeSampleTests.xctest */,
 				AE20AC091D254F7800410B70 /* MyCarthage.framework */,
 				AE20AC8B1D261F8C00410B70 /* ReactFramework.framework */,
+				AE20ACC71D263AEB00410B70 /* libReactLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,6 +462,15 @@
 			path = ReactFramework;
 			sourceTree = "<group>";
 		};
+		AE20ACC81D263AEB00410B70 /* ReactLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				AE20ACC91D263AEB00410B70 /* ReactLibrary.h */,
+				AE20ACCB1D263AEB00410B70 /* ReactLibrary.m */,
+			);
+			path = ReactLibrary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -458,6 +488,7 @@
 			files = (
 				AE20AC8E1D261F8C00410B70 /* ReactFramework.h in Headers */,
 				AE20ACA51D26205300410B70 /* MyViewController.h in Headers */,
+				AE20ACCA1D263AEB00410B70 /* ReactLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +570,23 @@
 			productReference = AE20AC8B1D261F8C00410B70 /* ReactFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AE20ACC61D263AEB00410B70 /* ReactLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE20ACCD1D263AEB00410B70 /* Build configuration list for PBXNativeTarget "ReactLibrary" */;
+			buildPhases = (
+				AE20ACC31D263AEB00410B70 /* Sources */,
+				AE20ACC41D263AEB00410B70 /* Frameworks */,
+				AE20ACC51D263AEB00410B70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactLibrary;
+			productName = ReactLibrary;
+			productReference = AE20ACC71D263AEB00410B70 /* libReactLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -556,6 +604,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					AE20AC8A1D261F8C00410B70 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AE20ACC61D263AEB00410B70 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -619,6 +670,7 @@
 				00E356ED1AD99517003FC87E /* ReactNativeSampleTests */,
 				AE20AC081D254F7800410B70 /* MyCarthageFramework */,
 				AE20AC8A1D261F8C00410B70 /* ReactFramework */,
+				AE20ACC61D263AEB00410B70 /* ReactLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -781,6 +833,14 @@
 				AE20ACA41D26201E00410B70 /* main.m in Sources */,
 				AE20ACA31D26201700410B70 /* AppDelegate.m in Sources */,
 				AE20ACA21D26201400410B70 /* MyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE20ACC31D263AEB00410B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE20ACCC1D263AEB00410B70 /* ReactLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1078,6 +1138,33 @@
 			};
 			name = Release;
 		};
+		AE20ACCE1D263AEB00410B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE20ACCF1D263AEB00410B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1122,6 +1209,14 @@
 			buildConfigurations = (
 				AE20AC951D261F8C00410B70 /* Debug */,
 				AE20AC961D261F8C00410B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE20ACCD1D263AEB00410B70 /* Build configuration list for PBXNativeTarget "ReactLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE20ACCE1D263AEB00410B70 /* Debug */,
+				AE20ACCF1D263AEB00410B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
